@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><cicsdefinitionwebservice xmlns="http://www.ibm.com/xmlns/prod/CICS/smw2int" description="Sequential Credit Card Application example" name="SEQPNT" pipeline="SOAPPROV" validation="NO" wsbind="SEQPNT.wsbind" wsdlfile="SEQPNT.wsdl"/>

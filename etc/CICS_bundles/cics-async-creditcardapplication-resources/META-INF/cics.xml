@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest xmlns="http://www.ibm.com/xmlns/prod/cics/bundle" id="cics-async-creditcardapplication-resources" bundleMajorVer="1" bundleMinorVer="0" bundleMicroVer="0" bundleVersion="1" bundleRelease="0" build="IntA-201605291433">
+    <meta_directives>
+        <timestamp>2016-06-30T15:02:54.622+01:00</timestamp>
+    </meta_directives>
+    <define name="ASYNCLIB" type="http://www.ibm.com/xmlns/prod/cics/bundle/LIBRARY" path="ASYNCLIB.library"/>
+    <define name="ACCA" type="http://www.ibm.com/xmlns/prod/cics/bundle/TRANSACTION" path="ACCA.transaction"/>
+    <define name="SCCA" type="http://www.ibm.com/xmlns/prod/cics/bundle/TRANSACTION" path="SCCA.transaction"/>
+    <define name="ICCK" type="http://www.ibm.com/xmlns/prod/cics/bundle/TRANSACTION" path="ICCK.transaction"/>
+    <define name="GETN" type="http://www.ibm.com/xmlns/prod/cics/bundle/TRANSACTION" path="GETN.transaction"/>
+    <define name="GETA" type="http://www.ibm.com/xmlns/prod/cics/bundle/TRANSACTION" path="GETA.transaction"/>
+    <define name="STUS" type="http://www.ibm.com/xmlns/prod/cics/bundle/TRANSACTION" path="STUS.transaction"/>
+    <define name="GETP" type="http://www.ibm.com/xmlns/prod/cics/bundle/TRANSACTION" path="GETP.transaction"/>
+    <define name="SPND" type="http://www.ibm.com/xmlns/prod/cics/bundle/TRANSACTION" path="SPND.transaction"/>
+    <define name="UPDB" type="http://www.ibm.com/xmlns/prod/cics/bundle/TRANSACTION" path="UPDB.transaction"/>
+    <define name="ASYNCPNT" type="http://www.ibm.com/xmlns/prod/cics/bundle/PROGRAM" path="ASYNCPNT.program"/>
+    <define name="SEQPNT" type="http://www.ibm.com/xmlns/prod/cics/bundle/PROGRAM" path="SEQPNT.program"/>
+    <define name="CRDTCHK" type="http://www.ibm.com/xmlns/prod/cics/bundle/PROGRAM" path="CRDTCHK.program"/>
+    <define name="GETNAME" type="http://www.ibm.com/xmlns/prod/cics/bundle/PROGRAM" path="GETNAME.program"/>
+    <define name="GETADDR" type="http://www.ibm.com/xmlns/prod/cics/bundle/PROGRAM" path="GETADDR.program"/>
+    <define name="CSSTATS2" type="http://www.ibm.com/xmlns/prod/cics/bundle/PROGRAM" path="CSSTATS2.program"/>
+    <define name="CSSTATUS" type="http://www.ibm.com/xmlns/prod/cics/bundle/PROGRAM" path="CSSTATUS.program"/>
+    <define name="GETPOL" type="http://www.ibm.com/xmlns/prod/cics/bundle/PROGRAM" path="GETPOL.program"/>
+    <define name="GETSPND" type="http://www.ibm.com/xmlns/prod/cics/bundle/PROGRAM" path="GETSPND.program"/>
+    <define name="UPDCSDB" type="http://www.ibm.com/xmlns/prod/cics/bundle/PROGRAM" path="UPDCSDB.program"/>
+</manifest>

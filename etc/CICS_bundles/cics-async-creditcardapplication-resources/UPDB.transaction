@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><cicsdefinitiontransaction xmlns="http://www.ibm.com/xmlns/prod/CICS/smw2int" description="Update the database cache with the customer credit check" localq="N_A" name="UPDB" program="UPDCSDB"/>

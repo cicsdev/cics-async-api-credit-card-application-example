@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><cicsdefinitiontcpipservice xmlns="http://www.ibm.com/xmlns/prod/CICS/smw2int" description="Web service port for incoming HTTP" name="HTTPWS" portnumber="12345" protocol="HTTP"/>

@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!-- 
+<copyright 
+ notice="cics-lm-source-program" 
+ pids="5655-Y04" 
+ years="2009,2014" 
+ crc="2814107617" > 
+  
+                      
+ Licensed Materials - Property of IBM 
+  
+ 5655-Y04 
+  
+ (C) Copyright IBM Corp. 2009, 2014 All Rights Reserved. 
+  
+ US Government Users Restricted Rights - Use, duplication or 
+ disclosure restricted by GSA ADP Schedule Contract with 
+ IBM Corp. 
+  
+ @{[**]copyright.years=2009, 2014} 
+  
+              
+ </copyright> 
+-->
+<provider_pipeline xmlns="http://www.ibm.com/software/htp/cics/pipeline">
+  <service>
+    <terminal_handler>
+      <cics_soap_1.1_handler/>
+    </terminal_handler>
+  </service>
+  <apphandler>DFHPITP</apphandler>
+</provider_pipeline>

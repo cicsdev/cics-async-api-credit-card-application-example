@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest xmlns="http://www.ibm.com/xmlns/prod/cics/bundle" id="cics-async-creditcardapplication-webservices" bundleMajorVer="1" bundleMinorVer="0" bundleMicroVer="0" bundleVersion="1" bundleRelease="0" build="IntA-201605291433">
+    <meta_directives>
+        <timestamp>2016-06-30T15:42:15.598+01:00</timestamp>
+    </meta_directives>
+    <define name="ASYNCPNT" type="http://www.ibm.com/xmlns/prod/cics/bundle/WEBSERVICE" path="ASYNCPNT.webservice"/>
+    <define name="ASYNCPN1" type="http://www.ibm.com/xmlns/prod/cics/bundle/URIMAP" path="ASYNCPN1.urimap"/>
+    <define name="ASYNCPN2" type="http://www.ibm.com/xmlns/prod/cics/bundle/URIMAP" path="ASYNCPN2.urimap"/>
+    <define name="SEQPNT" type="http://www.ibm.com/xmlns/prod/cics/bundle/WEBSERVICE" path="SEQPNT.webservice"/>
+    <define name="SEQPNT1" type="http://www.ibm.com/xmlns/prod/cics/bundle/URIMAP" path="SEQPNT1.urimap"/>
+    <define name="SEQPNT2" type="http://www.ibm.com/xmlns/prod/cics/bundle/URIMAP" path="SEQPNT2.urimap"/>
+</manifest>

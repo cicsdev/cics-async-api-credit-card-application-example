@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><cicsdefinitionpipeline xmlns="http://www.ibm.com/xmlns/prod/CICS/smw2int" configfile="basicsoap11provider.xml" description="SOAP based Web service Provider Pipeline" name="SOAPPROV"/>
