@@ -17,10 +17,11 @@ need to get up and running quickly if you're comfortable with bundles.
 
 1. Download the source code from this GitHub repository as a .zip file and
    extract to your preferred location.
-2. Compile the COBOL source code into a dataset.
-3. Define the transactions and programs in your CSD, and RPL the library.
+2. Compile the COBOL source code in the _src_ directory.
+3. Define the transactions and programs in your CSD, and add the load library to
+   the RPL (or define a library resource in the CSD).
 
-Here's a CSD definition we made earlier:
+Here are some CSD definitions we made earlier:
 
     DEFINE PROGRAM(ASYNCPNT) GROUP(AS) STATUS(ENABLED) DEFINE
     TRANSACTION(ACCA) GROUP(AS) PROGRAM(ASYNCPNT)
