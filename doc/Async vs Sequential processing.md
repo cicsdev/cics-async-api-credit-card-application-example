@@ -6,8 +6,6 @@ The source code for this example is available in full on [GitHub][github], where
 
 This particular example simulates a real-world scenario: a customer applies for a credit card, and a program kicks off to check their name, details, and history. Each check has its own program and associated transaction in CICS: `SEQPNT` calls the involved programs using `EXEC CICS LINK`, and `ASYNCPNT` uses the new `EXEC CICS RUN TRANSID` command. The child programs take the same amount of time to complete in both `ASYNCPNT` and `SEQPNT`, but `ASYNCPNT` finishes in roughly half the time thanks to the asynchronous API.
 
-**What `ASYNCPNT` looks like**
-
 ![Credit card application architecture](credit card application architecture.png)
 
 ## Getting it done: all at once or bit by bit
