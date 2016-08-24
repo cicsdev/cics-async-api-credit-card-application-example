@@ -4,7 +4,9 @@ Having introduced the [CICS Asynchronous API][prad] and given you a [basic examp
 
 The source code for this example is available in full on [GitHub][github], where you'll find our two parent programs, `ASYNCPNT` and `SEQPNT`, and instructions for running them from a CICS terminal. Rather than do a step-by-step tutorial, in this article we're going to examine how they differ, and how a few small architecture changes can make a massive difference to your response times.
 
-This particular example simulates a real-world scenario: a customer applies for a credit card, and an automated program kicks off to check their name, details, and history as part of the application process.
+This particular example simulates a real-world scenario: a customer applies for a credit card, and a program kicks off to check their name, details, and history. Each check has its own program and associated transaction in CICS: `SEQPNT` calls the involved programs using `EXEC CICS LINK`, and `ASYNCPNT` uses the new `EXEC CICS RUN TRANSID` command. The child programs take the same amount of time to complete in both `ASYNCPNT` and `SEQPNT`, but `ASYNCPNT` finishes in roughly half the time thanks to the asynchronous API.
+
+**What `ASYNCPNT` looks like**
 
 ![Credit card application architecture](credit card application architecture.png)
 
@@ -34,13 +36,13 @@ Our `ASYNCPNT` program, however, looks more like this:
                     CHANNEL      (MYCHANNEL)
                     CHILD        (CREDIT-CHECK-TKN)
     END-EXEC
-    
+
     EXEC CICS RUN TRANSID      (GET-ADDR-TRAN)
                     ASYNCHRONOUS
                     CHANNEL      (MYCHANNEL)
                     CHILD        (GET-ADDR-TKN)
     END-EXEC
-    
+
     EXEC CICS RUN TRANSID      (CSSTATUS-TRAN)
                     ASYNCHRONOUS
                     CHANNEL      (MYCHANNEL)
