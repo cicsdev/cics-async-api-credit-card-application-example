@@ -30,19 +30,16 @@ And so on for the other programs we need to run, calling and waiting, calling an
 Our `ASYNCPNT` program, however, looks more like this:
 
     EXEC CICS RUN TRANSID      (CREDIT-CHECK-TRAN)
-                    ASYNCHRONOUS
                     CHANNEL      (MYCHANNEL)
                     CHILD        (CREDIT-CHECK-TKN)
     END-EXEC
 
     EXEC CICS RUN TRANSID      (GET-ADDR-TRAN)
-                    ASYNCHRONOUS
                     CHANNEL      (MYCHANNEL)
                     CHILD        (GET-ADDR-TKN)
     END-EXEC
 
     EXEC CICS RUN TRANSID      (CSSTATUS-TRAN)
-                    ASYNCHRONOUS
                     CHANNEL      (MYCHANNEL)
                     CHILD        (CSSTATUS-TKN)
     END-EXEC

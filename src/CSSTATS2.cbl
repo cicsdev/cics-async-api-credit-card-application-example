@@ -78,11 +78,9 @@
       * The status is calculated by the existing custom of the client
       * and the amount they spent with us in the previous year
            EXEC CICS RUN TRANSID      (GET-POLICY-TRAN)
-                         ASYNCHRONOUS
                          CHILD        (GET-POLICY-TKN)
            END-EXEC
            EXEC CICS RUN TRANSID      (GET-SPEND-TRAN)
-                         ASYNCHRONOUS
                          CHILD        (GET-SPEND-TKN)
            END-EXEC
 

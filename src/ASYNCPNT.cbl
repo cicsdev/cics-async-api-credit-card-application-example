@@ -210,7 +210,6 @@
            PERFORM PRINT-TEXT-TO-SCREEN
 
            EXEC CICS RUN TRANSID      (CREDIT-CHECK-TRAN)
-                         ASYNCHRONOUS
                          CHANNEL      (MYCHANNEL)
                          CHILD        (CREDIT-CHECK-TKN)
            END-EXEC
@@ -219,7 +218,6 @@
            PERFORM PRINT-TEXT-TO-SCREEN
 
            EXEC CICS RUN TRANSID      (GET-ADDR-TRAN)
-                         ASYNCHRONOUS
                          CHANNEL      (MYCHANNEL)
                          CHILD        (GET-ADDR-TKN)
            END-EXEC
@@ -228,7 +226,6 @@
            PERFORM PRINT-TEXT-TO-SCREEN
 
            EXEC CICS RUN TRANSID      (CSSTATUS-TRAN)
-                         ASYNCHRONOUS
                          CHANNEL      (MYCHANNEL)
                          CHILD        (CSSTATUS-TKN)
            END-EXEC
@@ -237,7 +234,6 @@
            PERFORM PRINT-TEXT-TO-SCREEN
 
            EXEC CICS RUN TRANSID      (GET-NAME-TRAN)
-                         ASYNCHRONOUS
                          CHANNEL      (MYCHANNEL)
                          CHILD        (GET-NAME-TKN)
            END-EXEC
@@ -261,7 +257,6 @@
            PERFORM PRINT-TEXT-TO-SCREEN
 
            EXEC CICS RUN TRANSID      (DB-CACHE-TRAN)
-                         ASYNCHRONOUS
                          CHANNEL      (MYCHANNEL)
                          CHILD        (DB-CACHE-TKN)
            END-EXEC
